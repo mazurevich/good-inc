@@ -1,0 +1,128 @@
+@import "sprite"
+@import "utils"
+@import '_reset'
+@import "topline"
+
+*
+  box-sizing: border-box
+
+body
+  overflow: auto
+  font-family: Nexa, Arial, sans-serif
+
+.layout-wrapper
+  width: 940px
+  height: 67px
+  margin: 0 auto
+  +clrfx()
+
+
+$header-height: 67px
+
+.page-header
+  height: $header-height
+  position: relative
+  &:after
+    position: absolute
+    top: 0
+    width: 50%
+    left: 50%
+    height: inherit
+    background-color: #474747
+    content: ''
+    z-index: -1
+  &--layout-wrapper
+    background-color: #474747
+    padding-left: 80px
+    position: relative
+    &:after
+      position: absolute
+      content: ''
+      +s($map-pin)
+      top: 50%
+      left: 40px
+      transform: translate(-50%, -50%)
+
+
+.page-nav
+  float: left
+  ul li
+    display: inline-block
+    height: $header-height
+    line-height: $header-height - 1
+    float: left
+    box-shadow: 25px 0 0 -24px #767676
+    margin-left: 1px
+    &:first-child a
+      margin-left: 0
+    &:last-child a
+      box-shadow: none
+
+    a
+      display: inline-block
+      text-decoration: none
+      color: white
+      font-family: Nexa, Arial, sans-serif
+      font-size: 12px
+      font-weight: 700
+      text-transform: capitalize
+      vertical-align: middle
+      margin: 0px 23px
+      position: relative
+      &:hover::after, &.active::after
+        content: ''
+        position: absolute
+        height: 4px
+        width: 100%
+        background-color: #f26c4f
+        bottom: 0
+        left: 0
+
+
+.quicklink
+  float: right
+  //margin-top: 20px
+  height: $header-height
+  line-height: $header-height - 1
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    +s($select-arrows) 
+    right: 10px
+    top: 50%
+    transform: translate(0, -50%)
+
+  &__label
+    vertical-align: middle
+    color: #d5d5d5
+    font-size: 12px
+    font-weight: 700
+    text-transform: capitalize
+    padding: 5px 37px 5px 0
+    border-right: 1px solid #767676
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      right: 20px
+      top: 50%
+      transform: translate(50%, -50%)
+      +s($map-pin)
+  &__list
+    position: relative
+    background-color: transparent
+    border: none
+    appearance: none
+    color: #fff
+    padding: 5px 28px 5px 5px
+    margin-left: 32px
+    border-right: 1px solid #767676
+    option
+      color: black
+    option[value=""]
+      display: none
+
+.some-class
+  background-color: green
+

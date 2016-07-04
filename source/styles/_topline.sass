@@ -1,0 +1,107 @@
+$topline-height: 67px
+$selector-height: 35px
+.topline
+  background-color: #373737
+
+  &__layout-wrapper
+    line-height: $topline-height - 1
+
+  &__logo
+    width: 80px
+    height: $topline-height
+    background-color: #f26c4f
+    display: block
+    float: left
+    position: relative
+    margin-right: 25px
+    &:after
+      position: absolute
+      display: block
+      content: ''
+      right: -14px
+      top: 50%
+      transform: translateY(-50%)
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 14px 0 14px 14px
+      border-color: transparent transparent transparent #f26c4f
+      z-index: 1
+
+    i
+      +s($g)
+      display: inline-block
+      +center()
+
+  &__company-name
+    font-weight: bold
+    color: #fff
+    font-size: 18px
+    font-weight: 400
+    vertical-align: middle
+  &__selector
+    margin-left: 20px
+    float: right
+    height: $selector-height
+    margin-top: ($topline-height - $selector-height) / 2
+
+.selector
+  background-color: white
+  position: relative
+  &-contact
+    width: 146px
+  &-newsletter
+    width: 180px
+  &__input
+    position: absolute
+    border: none
+    top: 0
+    height: 100%
+    width: 100%
+    padding: 10px 40px
+  &:before
+    position: absolute
+    left: 20px
+    top: 50%
+    z-index: 3
+    content: ''
+    transform: translate(-50%, -50%)
+  &-newsletter:before
+    +s($map-pin)
+  &-contact:before
+    +s($clock)
+  &__btns
+    position: absolute
+    right: 0
+    top: 0
+    height: 100%
+  &__btn
+    text-indent: -9999px
+    margin: 0
+    padding: 0
+    border: none
+    background-color: #ebebeb
+    height: 50%
+    width: 36px
+    position: absolute
+    right: 0
+    overflow: hidden
+    cursor: pointer
+    outline: none
+    border-left: 1px solid #d8d8d8
+    &:after
+      position: absolute
+      left: 50%
+      content: ''
+      z-index: 2
+      +s($arrow)
+    &-up
+      top: 0
+      &:after
+        bottom: 2px
+        transform: translate(-50%, 0px)
+    &-down
+      bottom: 0
+      &:after
+        top: 2px
+        transform: translate(-50%, 0px) rotate(180deg)

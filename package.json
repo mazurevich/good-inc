@@ -1,0 +1,37 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
+    "eslint": "^2.13.1",
+    "eslint-config-google": "^0.6.0",
+    "eslint-plugin-react": "^5.2.2",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-eslint": "^2.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-remember": "^0.3.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp.spritesmith": "^6.2.1",
+    "multipipe": "^0.3.1",
+    "stream-combiner2": "^1.1.1",
+    "through2": "^2.0.1",
+    "vinyl-buffer": "^1.0.0"
+  }
+}
