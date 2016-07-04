@@ -1,0 +1,127 @@
+$teaser-img-height: 390px
+$teaser-img-width: 630px
+
+.teaser
+  margin-top: 10px
+  position: relative
+  box-shadow: 0 1px 1px 0 #bbb
+  &__layout-wrapper
+  &__btns
+    position: absolute
+    bottom: 0
+    right: 0
+  &__btn
+    text-indent: -9999px
+    border: none
+    height: 34px
+    width: 34px
+    float: left
+    cursor: pointer
+    background-color: #474747
+    outline: none
+    position: relative
+
+    &:hover
+      background-color: #535353
+    &:after
+      +s($white-arrow-left)
+      position: absolute
+      content: ''
+      z-index: 2
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+    &-forward:after
+      transform: translate(-50%, -50%) rotate(180deg)
+
+
+.news-preview-slider
+  width: 630px
+  overflow: hidden
+  float: left
+
+.news-previews
+  width: $teaser-img-width * 3
+  height: $teaser-img-height
+
+  position: relative
+
+  li
+    display: inline-block
+    position: relative
+    float: left
+    figure
+      height: $teaser-img-height
+    figcaption
+      position: absolute
+      bottom: 0
+      right: 0
+      height: 60px
+      line-height: 59px
+      color: #fff
+      font-size: 16px
+      padding: 0 30px
+      min-width: 365px
+      opacity: 0.5
+      background-color: black
+
+.news-descriptions
+  height: $teaser-img-height
+  overflow: hidden
+  border-left: 10px solid #f26c4f
+  position: relative
+  &:after
+    position: absolute
+    content: ''
+    width: 0
+    height: 0
+    top: 55px
+    border-style: solid
+    border-width: 14px 0 14px 14px
+    border-color: transparent transparent transparent #f26c4f
+
+.news-descr
+  display: none
+  background-color: #373737
+  height: $teaser-img-height
+  &.active
+    display: block
+  padding: 45px 35px
+  &__title
+    color: white
+    font-family: NexaRegular, Arial, sans-serif
+    font-size: 19px
+    font-weight: 400
+    line-height: 24px
+    margin-bottom: 25px
+  &__text
+    color: #a7a7a7
+    font-family: Arial
+    font-size: 12px
+    font-weight: 400
+    line-height: 23px
+  &__footer
+    line-height: 37px
+  &__save
+    border: none
+    outline: none
+    cursor: pointer
+    background-color: transparent
+    font-size: 36px
+    color: white
+  &__date
+    float: right
+    padding-left: 25px
+    color: #a7a7a7
+    font-family: Arial
+    font-size: 12px
+    vertical-align: middle
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      +s($clock-gray)
+

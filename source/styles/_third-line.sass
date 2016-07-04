@@ -1,0 +1,109 @@
+$third-line-height: 45px
+
+.third-line
+  &__layout-wrapper
+    margin-top: 15px
+  +clrfx()
+  height: $third-line-height
+  line-height: $third-line-height - 1
+
+.search
+  position: relative
+  float: left
+  &__input-wrapper
+    float: left
+    position: relative
+    box-shadow: 0 1px 1px 0 #aaa
+    &:after
+      +s($big-clock)
+      position: absolute
+      content: ''
+      z-index: 1
+      right: 15px
+      top: 12px
+
+  &__input
+    display: inline-block
+    border: none
+    height: $third-line-height
+    width: 300px
+    padding: 3px 50px 3px 20px
+    outline: none
+
+
+  &__location
+    float: left
+    margin-left: 20px
+    box-shadow: 0 1px 1px 0 #aaa
+
+.location
+  position: relative
+  &__select
+
+    height: $third-line-height
+    display: inline-block
+    width: 137px
+    padding: 3px 40px 3px 35px
+    appearance: none
+    color: #959595
+    border: none
+
+  &__btn
+    text-indent: -9999px
+    height: 50%
+    width: 40px
+    position: absolute
+    border: none
+    background-color: #8f8f8f
+    right: 0
+    outline: none
+    cursor: pointer
+    &:after
+      +s($arrow-white)
+      position: absolute
+      content: ''
+      z-index: 2
+      left: 50%
+
+
+    &-up
+      top: 0
+      &:after
+        bottom: 0
+        transform: translate(-50%,-2px)
+    &-down
+      bottom: 0
+      &:after
+        top: 0
+        transform: translate(-50%, 2px) rotate(180deg)
+
+
+.social
+  float: right
+  &__btn
+    text-decoration: none
+    color: #8f8f8f
+    font-family: Nexa, Arial, sans-serif
+    font-size: 12px
+    font-weight: 700
+    text-transform: capitalize
+    padding-left: 20px
+    position: relative
+    margin-left: 30px
+
+    &:visited
+      color: #8f8f8f
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+    &-tw:before
+      +s($twitter)
+    &-fb:before
+      +s($facebook)
+    &-rss:before
+      +s($rss)
+    &-mail:before
+      +s($mail)

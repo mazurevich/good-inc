@@ -1,0 +1,79 @@
+.news-cards
+  position: relative
+  overflow: hidden
+  &__layout-wrapper
+    margin-top: 15px
+    position: relative
+  &__nav-btn
+    position: absolute
+    top: 0
+    height: 100%
+    width: 80px
+    background-color: transparent
+    border: none
+    outline: none
+    cursor: pointer
+    &:after
+      position: absolute
+      content: ''
+      +center()
+
+    &-prev
+      left: -80px
+      &:after
+        +s($arrow-left-gray)
+    &-next
+      right: -80px
+      &:after
+        +s($arrow-right-gray)
+.news-list
+  width: 320px * 12
+  li
+    display: inline-block
+    float: left
+    margin-right: 20px
+
+.news-card
+  width: 300px
+  height: 380px
+  position: relative
+  overflow: hidden
+  background-color: #fff
+  border-bottom: 1px solid #d3d3d3
+  &__corner
+    height: 60px
+    position: absolute
+    top: 0
+    right: -30px
+    width: 110px
+    background-color: #373737
+    transform-origin: bottom left
+    transform: translate(2px, -100%) rotate(45deg)
+  .checked &__corner
+      background-color: #f26c4f
+  &__add
+    outline: none
+    cursor: pointer
+    background-color: transparent
+    font-size: 25px
+    border: none
+    color: white
+    position: absolute
+    bottom: 5px
+    left: 50%
+    transform: translate(-50%,0) rotate(-45deg)
+  &__body
+    padding: 20px 27px
+  &__title
+    color: #4f4f4f
+    font-family: Nexa, Arial, sans-serif
+    font-size: 22px
+    font-weight: 700
+    line-height: 27px
+    margin-bottom: 25px
+  &__desc
+    color: #646464
+    font-family: Arial
+    font-size: 12px
+    font-weight: 400
+    line-height: 24px
