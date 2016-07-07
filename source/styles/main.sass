@@ -5,7 +5,13 @@
 @import "header"
 @import "third-line"
 @import "teaser"
+@import "news-cards"
+@import "quote"
 @import "news-feed"
+@import "aside"
+@import "footer"
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css)
 
 *
   box-sizing: border-box
@@ -21,4 +27,148 @@ body
   margin-right: auto
   +clrfx()
 
+.main-content__layout-wrapper
+  margin-top: 20px
 
+.feed-content
+  float: left
+  width: 620px
+
+.aside
+  float: right
+  width: 300px
+
+.read-more
+  height: 100px
+  background-color: transparent
+  text-align: center
+  &__text
+    text-transform: uppercase
+    color: #bdbdbd
+    font-family: NexaHeavy, Arial, sans-serif
+    font-size: 14px
+    font-weight: 400
+    line-height: 21px
+    display: inline-block
+    margin-top: 30px
+  &__btn
+    display: block
+    width: 20px
+    height: 20px
+    line-height: 19px
+    font-size: 16px
+    border-radius: 50%
+    border: none
+    background-color: #bdbdbd
+    color: #eee
+    font-weight: bold
+    text-align: center
+    outline: none
+    text-indent: -1px
+    margin: 10px auto
+    cursor: pointer
+
+
+
+
+.search-work
+  padding: 20px 30px
+  background-color: #fff
+  box-shadow: 0 2px 2px #dedede
+  &__text
+    color: #bababa
+    font-family: Nexa, Arial, sans-serif
+    font-size: 12px
+    font-weight: 700
+    position: relative
+    padding-right: 45px
+    &:before
+      position: absolute
+      content: ''
+      +s($layers)
+      right: 20px
+    &:after
+      @extend %search-h-line
+
+  &__select-wrap
+    position: relative
+    display: inline-block
+    height: 20px
+    &:after
+      @extend %search-h-line
+    &:before
+      @extend %search-h-line
+      right: 30px
+  &__select
+    appearance: none
+    border: none
+    color: #f26c4f
+    font-family: Nexa, Arial, sans-serif
+    font-size: 12px
+    font-weight: 700
+    margin: 0 45px 0 20px
+
+  &__btn
+    position: absolute
+    border: none
+    background-color: transparent
+    height: 10px
+    width: 30px
+    right: 0
+    text-indent: -9999px
+    outline: none
+    &:after
+      position: absolute
+      left: 50%
+      bottom: 2px
+      content: ''
+      transform: translateX(-50%)
+    &-up
+      top: 0
+      &:after
+        +s($arrow-rng-up)
+    &-down
+      bottom: 0
+      &:after
+        +s($arrow-rng-down)
+
+
+.like-chb:checked
+
+.like-btn
+  cursor: pointer
+  position: relative
+  &:before
+    content: attr(data-cnt)
+    position: absolute
+    left: -20px
+  &:after
+    margin: 0 2px
+    font-family: FontAwesome
+    display: inline-block
+    content: "\f004"
+
+
+
+.corner
+  height: 60px
+  position: absolute
+  top: 0
+  right: -30px
+  width: 110px
+  background-color: #373737
+  transform-origin: bottom left
+  transform: translate(2px, -100%) rotate(45deg)
+  &__add
+    outline: none
+    cursor: pointer
+    background-color: transparent
+    font-size: 25px
+    border: none
+    color: white
+    position: absolute
+    bottom: 5px
+    left: 50%
+    transform: translate(-50%,0) rotate(-45deg)
+  .checked &
+    background-color: #f26c4f

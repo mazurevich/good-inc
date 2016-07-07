@@ -1,45 +1,47 @@
 $topline-height: 67px
 $selector-height: 35px
+
+.logo
+  width: 80px
+  height: $topline-height
+  background-color: #f26c4f
+  display: block
+  float: left
+  position: relative
+  margin-right: 25px
+  &:after
+    position: absolute
+    display: block
+    content: ''
+    right: -14px
+    top: 50%
+    transform: translateY(-50%)
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 14px 0 14px 14px
+    border-color: transparent transparent transparent #f26c4f
+    z-index: 1
+
+  i
+    +s($g)
+    display: inline-block
+    +center()
+
+.company-name
+  font-weight: 400
+  color: #fff
+  font-size: 18px
+  vertical-align: middle
+
 .topline
   background-color: #373737
-
   &__layout-wrapper
+    background-color: #373737
     line-height: $topline-height - 1
     height: $topline-height
 
-  &__logo
-    width: 80px
-    height: $topline-height
-    background-color: #f26c4f
-    display: block
-    float: left
-    position: relative
-    margin-right: 25px
-    &:after
-      position: absolute
-      display: block
-      content: ''
-      right: -14px
-      top: 50%
-      transform: translateY(-50%)
-      width: 0
-      height: 0
-      border-style: solid
-      border-width: 14px 0 14px 14px
-      border-color: transparent transparent transparent #f26c4f
-      z-index: 1
 
-    i
-      +s($g)
-      display: inline-block
-      +center()
-
-  &__company-name
-    font-weight: bold
-    color: #fff
-    font-size: 18px
-    font-weight: 400
-    vertical-align: middle
   &__selector
     margin-left: 20px
     float: right

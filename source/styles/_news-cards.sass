@@ -1,0 +1,73 @@
+
+@import "rank"
+
+.news-cards
+  position: relative
+  overflow: hidden
+  &__layout-wrapper
+    margin-top: 15px
+    position: relative
+  &__nav-btn
+    position: absolute
+    top: 0
+    height: 100%
+    width: 80px
+    background-color: transparent
+    border: none
+    outline: none
+    cursor: pointer
+    z-index: 2
+    @media (max-width: 940px)
+      background-color: rgba(0,0,0,.1)
+    &:after
+      position: absolute
+      content: ''
+      +center()
+
+    &-prev
+      left: -80px
+      @media (max-width: 940px)
+        left: 0
+      &:after
+        +s($arrow-left-gray)
+    &-next
+      right: -80px
+      &:after
+        +s($arrow-right-gray)
+      @media (max-width: 940px)
+        right: 0
+//@media (max-width: 940px)
+
+
+
+.news-list
+  width: 320px * 12
+  li
+    display: inline-block
+    float: left
+    margin-right: 20px
+
+.news-card
+  width: 300px
+  height: 380px
+  position: relative
+  overflow: hidden
+  background-color: #fff
+  border-bottom: 1px solid #d3d3d3
+
+
+  &__body
+    padding: 20px 27px
+  &__title
+    color: #4f4f4f
+    font-family: Nexa, Arial, sans-serif
+    font-size: 22px
+    font-weight: 700
+    line-height: 27px
+    margin-bottom: 25px
+  &__desc
+    color: #646464
+    font-family: Arial
+    font-size: 12px
+    font-weight: 400
+    line-height: 24px

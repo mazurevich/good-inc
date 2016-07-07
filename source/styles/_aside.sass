@@ -1,0 +1,141 @@
+.banner
+  box-shadow: 0 1px 0 lightgrey
+  &__img
+    display: block
+  position: relative
+  overflow: hidden
+  &__text
+    background-color: #373737
+    padding: 30px
+    color: white
+    font-family: Nexa, Arial, sans-serif
+    height: 290px
+    h1, h2, h3
+      font-size: 25px
+      font-weight: 700
+      line-height: 31px
+      padding-bottom: 20px
+    p
+      font-size: 12px
+      font-weight: 400
+      line-height: 24px
+
+.aside-quote
+  margin: 35px 10px 0 20px
+  position: relative
+  padding-bottom: 25px
+  &:not(:last-child):after
+    position: absolute
+    content: ''
+    width: 100%
+    height: 1px
+    background-color: #d9d9d9
+    bottom: 0
+    left: 0
+    border-bottom: 1px solid #f5f5f5
+
+  h1, h2, h3
+    text-shadow: 0 1px 0 white
+    color: #474747
+    font-family: NexaRegular, Arial, sans-serif
+    font-size: 19px
+    font-weight: 400
+    line-height: 24px
+    margin-bottom: 20px
+
+  p
+    text-shadow: 0 1px 0 white
+    color: #a7a7a7
+    font-family: Arial, sans-serif
+    font-size: 12px
+    font-weight: 400
+    line-height: 23px
+  &__info
+    margin-top: 15px
+  &__pin
+    border: none
+    outline: none
+    background-color: transparent
+    cursor: pointer
+    color: #8f8f8f
+    font-size: 36px
+    line-height: 24px
+    vertical-align: middle
+  &__date
+    text-shadow: 0 1px 0 white
+    color: #8f8f8f
+    font-family: Nexa, Arial, sans-serif
+    font-size: 12px
+    font-weight: 400
+    font-style: italic
+
+.aside-article
+  display: block
+  margin-bottom: 7px
+  background-color: #fff
+  border-left: 3px solid #cacaca
+  box-shadow: 0 1px 2px #cacaca
+  a
+    display: inline-block
+    height: 45px
+    line-height: 44px
+    width: 100%
+    padding: 0 20px
+    text-decoration: none
+    color: #474747
+    font-family: Nexa, Arial, sans-serif
+    font-size: 16px
+    font-weight: 700
+  &__author
+    margin-left: 13px
+    color: #a7a7a7
+    font-family: Arial, sans-serif
+    font-size: 12px
+    font-weight: 400
+    line-height: 23px
+    &:before
+      content: '('
+    &:after
+      content: ')'
+
+
+.stats
+  margin-top: 45px
+  &__table
+    width: 100%
+.stat
+  height: 55px
+  vertical-align: middle
+  &__count
+    text-shadow: 0 1px 0 white
+    color: #474747
+    font-family: NexaHeavy, Arial, sans-serif
+    font-size: 48px
+    font-weight: 400
+    vertical-align: middle
+    padding: 0 13px
+    width: 140px
+  &__name
+    text-shadow: 0 1px 0 white
+    color: #626262
+    font-family: Nexa, Arial, sans-serif
+    font-size: 14px
+    font-weight: 300
+    vertical-align: middle
+    text-transform: capitalize
+    padding-left: 50px
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      left: 5px
+      top: 50%
+      transform: translate(0, -50%)
+    &-readers:before
+      +s($glasess)
+    &-posts:before
+      +s($pencil)
+    &-downloads:before
+      +s($download)
+    &-good-inc:before
+      +s($g-small-gray)

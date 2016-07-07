@@ -1,79 +1,87 @@
-.news-cards
+@import "utils"
+@import "sprite"
+
+.news
+  background-color: #fff
+  margin-top: 25px
   position: relative
-  overflow: hidden
-  &__layout-wrapper
-    margin-top: 15px
-    position: relative
-  &__nav-btn
+  &__controls
     position: absolute
     top: 0
-    height: 100%
-    width: 80px
-    background-color: transparent
-    border: none
-    outline: none
-    cursor: pointer
+    left: 0
+  &__content
+    padding: 35px 50px
+    color: #707070
+    font-family: Nexa, Arial, sans-serif
+    @extend %box-shadow
+    h1, h2, h3
+      font-size: 30px
+      font-weight: 700
+      line-height: 40px
+      margin-bottom: 35px
+    a
+      color: #f26c4f
+      //font-size: 14px
+      font-weight: 700
+      line-height: 25px
+      text-decoration: none
+    p
+      font-size: 12px
+      line-height: 25px
+      &:not(:last-child)
+        margin-bottom: 40px
+      &.intro
+        font-size: 14px
+        font-weight: 700
+
+
+  &__info
+    color: #a2a2a2
+    font-family: Nexa, Arial, sans-serif
+    @extend %box-shadow
+    font-size: 12px
+    font-weight: 700
+    line-height: 24px
+    padding: 15px 25px
+    background-color: #efefef
+    input[type=checkbox]
+      display: none
+      &:checked + label
+        color: #f26c4f
+    &__like-lbl
+      float: right
+
+  &__img
+    position: relative
+
+.news-with-image
+  .news-controls__btn-pin
+    background-color: #363339
+  .news__controls
+    right: 0
+    bottom: 3px
+    top: auto
+    left: auto
+
+.news-controls__btn
+  border: none
+  width: 30px
+  height: 30px
+  opacity: 0.8
+  font-size: 20px
+  line-height: 29px
+  color: #fff
+  cursor: pointer
+  float: left
+  outline: none
+  position: relative
+  &-pin
+    background-color: #cacaca
+  &-skip
+    background-color: #f26c4f
     &:after
-      position: absolute
       content: ''
+      position: absolute
+      +s($arrow-right-white)
       +center()
 
-    &-prev
-      left: -80px
-      &:after
-        +s($arrow-left-gray)
-    &-next
-      right: -80px
-      &:after
-        +s($arrow-right-gray)
-.news-list
-  width: 320px * 12
-  li
-    display: inline-block
-    float: left
-    margin-right: 20px
-
-.news-card
-  width: 300px
-  height: 380px
-  position: relative
-  overflow: hidden
-  background-color: #fff
-  border-bottom: 1px solid #d3d3d3
-  &__corner
-    height: 60px
-    position: absolute
-    top: 0
-    right: -30px
-    width: 110px
-    background-color: #373737
-    transform-origin: bottom left
-    transform: translate(2px, -100%) rotate(45deg)
-  .checked &__corner
-      background-color: #f26c4f
-  &__add
-    outline: none
-    cursor: pointer
-    background-color: transparent
-    font-size: 25px
-    border: none
-    color: white
-    position: absolute
-    bottom: 5px
-    left: 50%
-    transform: translate(-50%,0) rotate(-45deg)
-  &__body
-    padding: 20px 27px
-  &__title
-    color: #4f4f4f
-    font-family: Nexa, Arial, sans-serif
-    font-size: 22px
-    font-weight: 700
-    line-height: 27px
-    margin-bottom: 25px
-  &__desc
-    color: #646464
-    font-family: Arial
-    font-size: 12px
-    font-weight: 400
-    line-height: 24px

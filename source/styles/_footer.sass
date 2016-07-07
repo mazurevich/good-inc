@@ -1,0 +1,44 @@
+$bottom-line-height: 66px
+
+.footer
+  height: 490px
+  background-color: #373737
+
+.bottom-line
+  height: $bottom-line-height
+  line-height: $bottom-line-height - 1px
+  position: relative
+  z-index: 2
+  &:after
+    position: absolute
+    z-index: -1
+    left: 50%
+    width: 50%
+    background-color: #474747
+    height: $bottom-line-height  + 1px
+    content: ''
+    top: 0
+  &__layout-wrapper
+    background-color: #474747
+  &__page-nav
+    float: right
+
+.footer-info
+  margin-top: 50px
+  &__links
+    line-height: 16px
+    a
+      text-decoration: none
+      text-transform: capitalize
+      color: white
+      font-family: Helvetica, Arial, sans-serif
+      font-size: 12px
+      font-weight: 400
+      margin-right: 20px
+  &__copyright
+    color: #7e7e7e
+    margin-top: 20px
+    font-family: Helvetica, Arial, sans-serif
+    font-size: 12px
+    line-height: 21px
+    font-weight: 400
