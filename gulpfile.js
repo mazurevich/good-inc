@@ -1,13 +1,14 @@
 'use strict';
 
-const gulp = require('gulp');
-const browserSync = require('browser-sync').create();
+
+var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
 
 function lazyRequireTask(taskName, path, options) {
     options = options || {};
     options.taskName = taskName;
     gulp.task(taskName, function (callback) {
-        let task = require(path).call(this, options);
+        var task = require(path).call(this, options);
 
         return task(callback);
     })
