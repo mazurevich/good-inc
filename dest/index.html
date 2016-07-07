@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="topline">
+    <div class="layout-wrapper topline__layout-wrapper">
+        <span class="topline__logo logo"><i></i></span>
+        <span class="topline__company-name company-name">Good Inc.</span>
+
+        <div class="topline__selector selector selector-contact">
+            <input type="text" class="selector__input" placeholder="Contact">
+            <div class="selector__btns">
+                <button type="button" class="selector__btn selector__btn-up">up</button>
+                <button type="button" class="selector__btn selector__btn-down">down</button>
+            </div>
+        </div>
+        <div class="topline__selector selector selector-newsletter">
+            <input type="text" class="selector__input" placeholder="Newsletter">
+            <div class="selector__btns">
+                <button type="button" class="selector__btn selector__btn-up">up</button>
+                <button type="button" class="selector__btn selector__btn-down">down</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<header class="page-header">
+    <div class="layout-wrapper page-header--layout-wrapper">
+        <nav class="page-nav">
+            <ul>
+                <li><a href="#" class="active">portfolio</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">staff</a></li>
+                <li><a href="#">articles</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="quicklink">
+            <label for="quicklink__list" class="quicklink__label">quicklinks</label>
+            <select name="quicklink" id="quicklink__list" class="quicklink__list">
+                <option value="" disabled selected>Select from dropdown</option>
+                <option value="1">Lorem.</option>
+                <option value="2">Explicabo!</option>
+                <option value="3">Facere.</option>
+                <option value="4">Fuga?</option>
+                <option value="5">Deserunt.</option>
+            </select></div>
+
+    </div>
+</header>
+
+<div class="layout-wrapper third-line__layout-wrapper">
+    <section class="third-line">
+        <section class="search">
+
+            <div class="search__input-wrapper">
+                <input type="text" name="search" class="search__input" id="search__input"
+                       placeholder="Search for something here">
+            </div>
+            <div class="search__location location">
+                <select name="location" id="" class="location__select">
+                    <option value="1">Lorem.</option>
+                    <option value="2">Et.</option>
+                    <option value="3">Adipisci?</option>
+                </select>
+                <button type="button" class="location__btn location__btn-up">up</button>
+                <button type="button" class="location__btn location__btn-down">down</button>
+            </div>
+        </section>
+        <section class="social">
+            <a href="#twitter" class="social__btn social__btn-tw">twitter</a>
+            <a href="#facebook" class="social__btn social__btn-fb">facebook</a>
+            <a href="#rss" class="social__btn social__btn-rss">rss</a>
+            <a href="#mailto" class="social__btn social__btn-mail">mail</a>
+        </section>
+    </section>
+</div>
+
+<div class="layout-wrapper teaser__layout-wrapper">
+    <section class="teaser">
+        <div class="news-preview-slider">
+            <ul class="news-previews">
+                <li>
+                    <figure><img src="http://placekitten.com/630/390" alt="">
+                        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><img src="http://placekitten.com/630/390" alt="">
+                        <figcaption>Consequuntur hic numquam reiciendis sequi.</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><img src="http://placekitten.com/630/390" alt="">
+                        <figcaption>Ab earum facere quo voluptatem?</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        <ul class="news-descriptions">
+            <li>
+                <div class="news-descr active">
+
+                    <h2 class="news-descr__title">Asperiores beatae cum harum repellat?</h2>
+                    <p class="news-descr__text">Animi commodi consectetur magni molestiae omnis qui quisquam
+                        reiciendis
+                        rem temporibus veritatis. Doloribus enim perferendis quibusdam! Adipisci amet aut commodi
+                        consequuntur debitis dicta dolore doloremque doloribus dolorum earum est eveniet
+                    </p>
+                    <div class="news-descr__footer">
+                        <button type="button" class="news-descr__save">+</button>
+                        <time datetime="2013-04-14" class="news-descr__date">14th April 2013</time>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <div class="news-descr active">
+
+                    <h2 class="news-descr__title">Asperiores beatae cum harum repellat?</h2>
+                    <p class="news-descr__text">Animi commodi consectetur magni molestiae omnis qui quisquam
+                        reiciendis
+                        rem temporibus veritatis. Doloribus enim perferendis quibusdam! Adipisci amet aut commodi
+                        consequuntur debitis dicta dolore doloremque doloribus dolorum earum est eveniet
+                    </p>
+                    <div class="news-descr__footer">
+                        <button type="button" class="news-descr__save">+</button>
+                        <time datetime="2013-04-14" class="news-descr__date">14th April 2013</time>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <div class="news-descr active">
+
+                    <h2 class="news-descr__title">Asperiores beatae cum harum repellat?</h2>
+                    <p class="news-descr__text">Animi commodi consectetur magni molestiae omnis qui quisquam
+                        reiciendis
+                        rem temporibus veritatis. Doloribus enim perferendis quibusdam! Adipisci amet aut commodi
+                        consequuntur debitis dicta dolore doloremque doloribus dolorum earum est eveniet
+                    </p>
+                    <div class="news-descr__footer">
+                        <button type="button" class="news-descr-card__save">+</button>
+                        <time datetime="2013-04-14" class="news-descr-card__date">14th April 2013</time>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+        <div class="teaser__btns">
+            <button type="button" class="teaser__btn teaser__btn-back">back</button>
+            <button type="button" class="teaser__btn teaser__btn-forward">forward</button>
+        </div>
+    </section>
+</div>
+
+<div class="layout-wrapper news-cards__layout-wrapper">
+    <button type="button" class="news-cards__nav-btn news-cards__nav-btn-prev"></button>
+    <button type="button" class="news-cards__nav-btn news-cards__nav-btn-next"></button>
+    <div class="news-cards">
+        <ul class="news-list">
+            <li>
+                <article class="news-card">
+                    <div class="news-card__corner corner">
+                        <button type="button" class="news-card__add corner__add">+</button>
+                    </div>
+                    <img src="http://placekitten.com/300/190" alt="" class="news-card__img">
+                    <div class="news-card__body">
+                        <h2 class="news-card__title">Ipsa natus quibusdam quos voluptate?</h2>
+                        <p class="news-card__desc">Corporis error eum ex porro quae totam ut velit voluptatum.</p>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="news-card">
+                    <div class="news-card__corner corner">
+                        <button type="button" class="news-card__add corner__add">+</button>
+                    </div>
+                    <img src="http://placekitten.com/300/190" alt="" class="news-card__img">
+                    <div class="news-card__body">
+                        <h2 class="news-card__title">Ipsa natus quibusdam quos voluptate?</h2>
+                        <p class="news-card__desc">Corporis error eum ex porro quae totam ut velit voluptatum.</p>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="news-card checked">
+                    <div class="news-card__corner corner">
+                        <button type="button" class="news-card__add corner__add">+</button>
+                    </div>
+                    <img src="http://placekitten.com/300/190" alt="" class="news-card__img">
+                    <div class="news-card__body">
+                        <h2 class="news-card__title">Ipsa natus quibusdam quos voluptate?</h2>
+                        <p class="news-card__desc">Corporis error eum ex porro quae totam ut velit voluptatum.</p>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="news-card">
+                    <div class="news-card__corner corner">
+                        <button type="button" class="news-card__add corner__add">+</button>
+                    </div>
+                    <img src="http://placekitten.com/300/190" alt="" class="news-card__img">
+                    <div class="news-card__body">
+                        <h2 class="news-card__title">Ipsa natus quibusdam quos voluptate?</h2>
+                        <p class="news-card__desc">Corporis error eum ex porro quae totam ut velit voluptatum.</p>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="news-card">
+                    <div class="news-card__corner corner">
+                        <button type="button" class="news-card__add corner__add">+</button>
+                    </div>
+                    <img src="http://placekitten.com/300/190" alt="" class="news-card__img">
+                    <div class="news-card__body">
+                        <h2 class="news-card__title">Ipsa natus quibusdam quos voluptate?</h2>
+                        <p class="news-card__desc">Corporis error eum ex porro quae totam ut velit voluptatum.</p>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="news-card">
+                    <div class="news-card__corner corner">
+                        <button type="button" class="news-card__add corner__add">+</button>
+                    </div>
+                    <img src="http://placekitten.com/300/190" alt="" class="news-card__img">
+                    <h2 class="news-card__title">Assumenda at deserunt modi recusandae.</h2>
+                    <p class="news-card__desc">Consequatur, error quibusdam! A adipisci expedita harum maxime obcaecati
+                        repellat.</p>
+                </article>
+            </li>
+            <li>
+                <article class="news-card">
+                    <div class="news-card__corner corner">
+                        <button type="button" class="news-card__add corner__add">+</button>
+                    </div>
+                    <img src="http://placekitten.com/300/190" alt="" class="news-card__img">
+                    <h2 class="news-card__title">Eos impedit maiores quam sed.</h2>
+                    <p class="news-card__desc">Amet blanditiis cum earum inventore, maiores nam obcaecati officia
+                        praesentium.</p>
+                </article>
+            </li>
+            <li>
+                <article class="news-card">
+                    <div class="news-card__corner corner">
+                        <button type="button" class="news-card__add corner__add">+</button>
+                    </div>
+                    <img src="http://placekitten.com/300/190" alt="" class="news-card__img">
+                    <h2 class="news-card__title">Est ratione rerum vel voluptatibus!</h2>
+                    <p class="news-card__desc">Aliquid aspernatur beatae consectetur distinctio est odit perferendis
+                        quibusdam rem.</p>
+                </article>
+            </li>
+            <li>
+                <article class="news-card">
+                    <div class="news-card__corner corner">
+                        <button type="button" class="news-card__add corner__add">+</button>
+                    </div>
+                    <img src="http://placekitten.com/300/190" alt="" class="news-card__img">
+                    <h2 class="news-card__title">Blanditiis commodi eum nesciunt sequi.</h2>
+                    <p class="news-card__desc">Alias delectus et, porro quia sed sequi sit vel velit.</p>
+                </article>
+            </li>
+            <li>
+                <article class="news-card">
+                    <div class="news-card__corner corner">
+                        <button type="button" class="news-card__add corner__add">+</button>
+                    </div>
+                    <img src="http://placekitten.com/300/190" alt="" class="news-card__img">
+                    <h2 class="news-card__title">Et nihil quis tenetur velit?</h2>
+                    <p class="news-card__desc">Animi aut consectetur dolor ea eaque, minus non quibusdam ratione.</p>
+                </article>
+            </li>
+        </ul>
+
+
+    </div>
+</div>
+
+<div class="layout-wrapper main-content__layout-wrapper">
+    <main class="feed-content">
+        <div class="quote-feed">
+            <div class="quote quote-top">
+                <h2 class="quote__header">Lorem ipsum dolor sit amet.</h2>
+                <div class="quote__info">
+                    <time datetime="2013-04-14" class="quote__time quote__info-part">13th January 2013</time>
+                    <span class="quote__info-part">
+                        <span class="quote__comments-cnt">312</span><span class="quote__comments"> comments</span>
+                    </span>
+                    <div class="quote__rank quote__info-part">
+                        <fieldset class="rating">
+                            <input type="radio" id="star1-5" name="rating-1" checked value="5"/>
+                            <label class="full" for="star1-5"
+                                   title="Awesome - 5 stars"></label>
+                            <input type="radio" id="star1-4half" name="rating-1" value="4 and a half"/>
+                            <label class="half"
+                                   for="star4half"
+                                   title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="star1-4" name="rating-1" value="4"/>
+                            <label class="full"
+                                   for="star1-4"
+                                   title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="star1-3half" name="rating-1" value="3 and a half"/>
+                            <label class="half"
+                                   for="star1-3half"
+                                   title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="star1-3" name="rating-1" value="3"/><label class="full"
+                                                                                               for="star1-3"
+                                                                                               title="Meh - 3 stars"></label>
+                            <input type="radio" id="star1-2half" name="rating-1" value="2 and a half"/>
+                            <label class="half"
+                                   for="star1-2half"
+                                   title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="star1-2" name="rating-1" value="2"/>
+                            <label class="full" for="star1-2"
+                                   title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="star1-1half" name="rating-1" value="1 and a half"/>
+                            <label class="half"
+                                   for="star1-1half"
+                                   title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="star1-1" name="rating-1" value="1"/>
+                            <label class="full" for="star1-1"
+                                   title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="star1-half" name="rating-1" value="half"/>
+                            <label class="half"
+                                   for="star1-half"
+                                   title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                        <span class="quote__vote-cnt">123</span>
+                        <span class="quote__vote">votes</span>
+                    </div>
+                </div>
+                <div class="quote__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae cum ducimus eos
+                        error fuga, possimus. Assumenda, magnam qui?</p>
+                </div>
+            </div>
+            <div class="quote quote-top quote-highlighted">
+                <h2 class="quote__header">Lorem ipsum dolor sit amet.</h2>
+                <div class="quote__info">
+                    <time datetime="2013-04-14" class="quote__time quote__info-part">13th January 2013</time>
+                    <span class="quote__info-part">
+                        <span class="quote__comments-cnt">312</span><span class="quote__comments"> comments</span>
+                    </span>
+                    <div class="quote__rank quote__info-part">
+                        <fieldset class="rating">
+                            <input type="radio" id="star5" name="rating" value="5"/>
+                            <label class="full" for="star5"
+                                   title="Awesome - 5 stars"></label>
+                            <input type="radio" id="star4half" name="rating" value="4 and a half"/>
+                            <label class="half"
+                                   for="star4half"
+                                   title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="star4" checked name="rating" value="4"/>
+                            <label class="full"
+                                   for="star4"
+                                   title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="star3half" name="rating" value="3 and a half"/>
+                            <label class="half"
+                                   for="star3half"
+                                   title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="star3" name="rating" value="3"/>
+                            <label class="full" for="star3"
+                                   title="Meh - 3 stars"></label>
+                            <input type="radio" id="star2half" name="rating" value="2 and a half"/>
+                            <label class="half"
+                                   for="star2half"
+                                   title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="star2" name="rating" value="2"/>
+                            <label class="full" for="star2"
+                                   title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="star1half" name="rating" value="1 and a half"/>
+                            <label class="half"
+                                   for="star1half"
+                                   title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="star1" name="rating" value="1"/>
+                            <label class="full" for="star1"
+                                   title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="starhalf" name="rating" value="half"/>
+                            <label class="half"
+                                   for="starhalf"
+                                   title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                        <span class="quote__vote-cnt">123</span>
+                        <span class="quote__vote">votes</span>
+                    </div>
+                </div>
+                <div class="quote__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae cum ducimus eos
+                        error fuga, possimus. Assumenda, magnam qui?</p>
+                </div>
+            </div>
+
+            <div class="quote quote-avg quote-medium">
+                <h2 class="quote__header">Lorem ipsum dolor sit amet.</h2>
+                <div class="quote__info">
+                    <time datetime="2013-04-14" class="quote__time quote__info-part">13th January 2013</time>
+                    <span class="quote__info-part">
+                        <span class="quote__comments-cnt">312</span><span class="quote__comments"> comments</span>
+                    </span>
+                </div>
+            </div>
+            <div class="quote quote-small quote-medium">
+                <h2 class="quote__header">Lorem ipsum dolor sit amet.</h2>
+                <div class="quote__info">
+                    <time datetime="2013-04-14" class="quote__time quote__info-part">13th January 2013</time>
+                    <span class="quote__info-part">
+                        <span class="quote__comments-cnt">312</span><span class="quote__comments"> comments</span>
+                    </span>
+                </div>
+            </div>
+            <div class="quote quote-small quote-low">
+                <h2 class="quote__header">Lorem ipsum dolor sit amet.</h2>
+                <div class="quote__info">
+                    <time datetime="2013-04-14" class="quote__time quote__info-part">13th January 2013</time>
+                    <span class="quote__info-part">
+                        <span class="quote__comments-cnt">312</span><span class="quote__comments"> comments</span>
+                    </span>
+                </div>
+            </div>
+            <div class="quote quote-small quote-low">
+                <h2 class="quote__header">Lorem ipsum dolor sit amet.</h2>
+                <div class="quote__info">
+                    <time datetime="2013-04-14" class="quote__time quote__info-part">13th January 2013</time>
+                    <span class="quote__info-part">
+                        <span class="quote__comments-cnt">312</span><span class="quote__comments"> comments</span>
+                    </span>
+                </div>
+            </div>
+            <div class="quote quote-small quote-low">
+                <h2 class="quote__header">Lorem ipsum dolor sit amet.</h2>
+                <div class="quote__info">
+                    <time datetime="2013-04-14" class="quote__time quote__info-part">13th January 2013</time>
+                    <span class="quote__info-part">
+                        <span class="quote__comments-cnt">312</span><span class="quote__comments"> comments</span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="read-more">
+            <span class="read-more__text">read more</span>
+            <button type="button" class="read-more__btn">+</button>
+        </div>
+        <div class="search-work">
+            <span class="search-work__text">Search work by</span>
+            <div class="search-work__select-wrap">
+                <select name="searchWork" id="searchWork" class="search-work__select">
+                    <option value="1" selected>Web Design</option>
+                    <option value="2">Eius, perspiciatis.</option>
+                    <option value="3">Recusandae, sunt!</option>
+                </select>
+                <button type="button" class="search-work__btn search-work__btn-up">up</button>
+                <button type="button" class="search-work__btn search-work__btn-down">down</button>
+            </div>
+
+        </div>
+
+
+        <div class="news-cards">
+            <article class="news">
+                <div class="news__controls news-controls">
+                    <button type="button" class="news-controls__btn news-controls__btn-pin">+</button>
+                </div>
+
+                <div class="news__content">
+                    <h2>Lorem ipsum.</h2>
+                    <p class="intro">Lorem ipsum dolor sit <a href="#0">Lorem ipsum.</a> amet, consectetur adipisicing
+                        elit. Aliquam aperiam consequuntur dolorum ducimus enim eum explicabo id illo modi mollitia
+                        necessitatibus perferendis qui quia quibusdam quos repudiandae, sed sequi ullam.</p>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, aliquam aspernatur
+                        corporis culpa dicta dignissimos distinctio doloremque dolores eaque eligendi ex facilis fugit
+                        harum inventore laboriosam laborum maxime nisi porro possimus quaerat quia quidem quos ratione
+                        sed soluta tenetur?</p>
+                </div>
+
+                <div class="news__info">
+                    <time datetime="12-23-2012">19th April</time>
+                    <input type="checkbox" class="news__info__like-chb like-chb" name="news__info-like-chb"
+                           id="news-like-12">
+                    <label for="news-like-12" class="news__info__like-lbl like-btn" data-cnt="23"> </label>
+
+                </div>
+            </article>
+            <article class="news news-with-image">
+                <div class="news__img">
+                    <img src="http://placekitten.com/620/305" alt="">
+                    <div class="news__controls">
+                        <button type="button" class="news-controls__btn news-controls__btn-pin">+</button>
+                        <button type="button" class="news-controls__btn news-controls__btn-skip"></button>
+                    </div>
+                </div>
+                <div class="news__content">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eaque fugiat modi odit
+                        quo.</h2>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut, cumque
+                        esse hic ipsum iure laborum libero modi nam nisi omnis optio provident recusandae rem
+                        repudiandae sed, suscipit tempora, voluptatem?</p>
+                </div>
+            </article>
+
+            <article class="news">
+                <div class="news__controls news-controls">
+                    <button type="button" class="news-controls__btn news-controls__btn-pin">+</button>
+                </div>
+
+                <div class="news__content">
+                    <h2>Lorem ipsum.</h2>
+                    <p class="intro">Lorem ipsum dolor sit <a href="#0">Lorem ipsum.</a> amet, consectetur adipisicing
+                        elit. Aliquam aperiam consequuntur dolorum ducimus enim eum explicabo id illo modi mollitia
+                        necessitatibus perferendis qui quia quibusdam quos repudiandae, sed sequi ullam.</p>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, aliquam aspernatur
+                        corporis culpa dicta dignissimos distinctio doloremque dolores eaque eligendi ex facilis fugit
+                        harum inventore laboriosam laborum maxime nisi porro possimus quaerat quia quidem quos ratione
+                        sed soluta tenetur?</p>
+                </div>
+
+            </article>
+
+        </div>
+    </main>
+    <aside class="aside">
+        <article class="banner checked">
+            <img src="http://placekitten.com/300/300" alt="" class="banner__img">
+            <div class="banner__corner corner">
+                <button type="button" class="corner__add">+</button>
+            </div>
+            <div class="banner__text">
+                <h2>Lorem ipsum dolor. ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequuntur delectus earum esse
+                    facilis laborum molestiae repellendus, repudiandae? Est, repellat!</p>
+            </div>
+        </article>
+
+        <section class="aside-quotes">
+            <div class="aside-quote">
+                <h2>Lorem ipsum dolor sit. ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae impedit laboriosam
+                    praesentium quo reiciendis sapiente, vero. Assumenda magni, voluptate. Assumenda eos incidunt
+                    officia repellat.</p>
+                <div class="aside-quote__info">
+                    <button type="button" class="aside-quote__pin">+</button>
+                    <time class="aside-quote__date" datetime="13-01-2013">13th January 2013</time>
+                </div>
+            </div>
+            <div class="aside-quote">
+                <h2>Lorem ipsum dolor sit. ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae impedit laboriosam
+                    praesentium quo reiciendis sapiente, vero. Assumenda magni, voluptate. Assumenda eos incidunt
+                    officia repellat.</p>
+                <div class="aside-quote__info">
+                    <button type="button" class="aside-quote__pin">+</button>
+                    <time class="aside-quote__date" datetime="13-01-2013">13th January 2013</time>
+                </div>
+            </div>
+        </section>
+        <section class="popular-articles">
+            <ul class="articles-list">
+                <li class="aside-article"><a href="#0">Lorem ipsum.<span
+                        class="aside-article__author">Lorem ipsum.</span></a></li>
+                <li class="aside-article"><a href="#0">Iusto, tempore!<span class="aside-article__author">Praesentium, vitae?</span></a>
+                </li>
+                <li class="aside-article"><a href="#0">Ea, natus!<span
+                        class="aside-article__author">Temporibus, vero.</span></a>
+                </li>
+                <li class="aside-article"><a href="#0">At, iusto.<span
+                        class="aside-article__author">Dolores, tempore.</span></a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="stats">
+            <table class="stats__table">
+                <tr class="stat">
+                    <td class="stat__count">1980</td>
+                    <td class="stat__name stat__name-readers">active readers</td>
+                </tr>
+                <tr class="stat">
+                    <td class="stat__count">126</td>
+                    <td class="stat__name stat__name-posts">post articles</td>
+                </tr>
+                <tr class="stat">
+                    <td class="stat__count">42</td>
+                    <td class="stat__name stat__name-downloads">free downloads</td>
+                </tr>
+                <tr class="stat">
+                    <td class="stat__count">1</td>
+                    <td class="stat__name stat__name-good-inc">good inc</td>
+                </tr>
+            </table>
+        </section>
+    </aside>
+
+</div>
+
+<footer class="footer">
+    <div class="bottom-line">
+        <div class="layout-wrapper bottom-line__layout-wrapper">
+            <span class="bottom-line__logo logo"><i></i></span>
+            <span class="bottom-line__company-name company-name">Good Inc.</span>
+            <nav class="bottom-line__page-nav page-nav">
+                <ul>
+                    <li><a href="#" class="active">portfolio</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">staff</a></li>
+                    <li><a href="#">articles</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="layout-wrapper footer-info">
+            <div class="footer-info__links">
+                <a href="#0">Lorem ipsum.</a><a href="#0">Officiis, quae?</a><a href="#0">Iure, sunt?</a><a href="#0">Dolorum,
+                ut.</a>
+            </div>
+            <p class="footer-info__copyright">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolores doloribus dolorum esse facere laudantium placeat veritatis voluptatum? Amet autem, consectetur dolore ducimus eius laboriosam perferendis placeat sunt vero voluptates!
+            </p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
